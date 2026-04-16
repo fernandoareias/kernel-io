@@ -9,3 +9,7 @@ endif()
 if(KIO_BUILD_KQUEUE)
   add_subdirectory(kqueue)
 endif()
+
+if(KIO_BUILD_URING)
+  add_subdirectory(uring)
+endif()

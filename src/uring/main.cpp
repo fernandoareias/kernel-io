@@ -1,14 +1,19 @@
-#include <sys/epoll.h>
+/*
+ * io_uring + thread pool — GET para www.google.com
+ * Sem DNS: usa IP fixo via inet_pton()
+ *
+ * Compilar:
+ *   g++ io_uring_example.cpp -o io_uring_example -luring -std=c++17
+ */
+
+#include <liburing.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h>
-#include <fcntl.h>
 #include <cstring>
-#include <cerrno>
 
 #include <iostream>
-#include <string>
 #include <thread>
 #include <vector>
 #include <queue>
@@ -26,7 +31,9 @@ public:
                     std::function<void()> task;
                     {
                         std::unique_lock<std::mutex> lock(mtx_);
-                        cv_.wait(lock, [this] { return stop_ || !tasks_.empty(); });
+                        cv_.wait(lock, [this] {
+                            return stop_ || !tasks_.empty();
+                        });
                         if (stop_ && tasks_.empty()) return;
                         task = std::move(tasks_.front());
                         tasks_.pop();
@@ -57,20 +64,11 @@ private:
 };
 
 
-static bool epoll_wait_for(int epfd, int fd, uint32_t events) {
-    epoll_event ev{};
-    ev.events  = events;
-    ev.data.fd = fd;
-    epoll_ctl(epfd, EPOLL_CTL_MOD, fd, &ev);
-
-    epoll_event out{};
-    return epoll_wait(epfd, &out, 1, 5000) == 1;
-}
-
 void do_http_get(int id) {
     const char* ip      = "142.251.152.119";
     const int   port    = 80;
     const char* req_str = "GET / HTTP/1.0\r\nHost: www.google.com\r\nConnection: close\r\n\r\n";
+
 
     struct sockaddr_in addr{};
     addr.sin_family = AF_INET;
@@ -80,66 +78,66 @@ void do_http_get(int id) {
         return;
     }
 
-    int fd = socket(AF_INET, SOCK_STREAM | SOCK_NONBLOCK, 0);
+    int fd = socket(AF_INET, SOCK_STREAM, 0);
     if (fd < 0) {
         std::cerr << "[req " << id << "] socket() falhou\n";
         return;
     }
 
-    int epfd = epoll_create1(0);
-    if (epfd < 0) {
-        std::cerr << "[req " << id << "] epoll_create1 falhou\n";
+    struct io_uring ring{};
+    if (io_uring_queue_init(32, &ring, 0) < 0) {
+        std::cerr << "[req " << id << "] io_uring_queue_init falhou\n";
         close(fd);
         return;
     }
 
-    epoll_event ev{};
-    ev.events  = EPOLLOUT;
-    ev.data.fd = fd;
-    epoll_ctl(epfd, EPOLL_CTL_ADD, fd, &ev);
+    struct io_uring_sqe* sqe = nullptr;
+    struct io_uring_cqe* cqe = nullptr;
 
-    if (connect(fd, reinterpret_cast<sockaddr*>(&addr), sizeof(addr)) < 0
-        && errno != EINPROGRESS) {
-        std::cerr << "[req " << id << "] connect falhou: " << strerror(errno) << "\n";
+
+    sqe = io_uring_get_sqe(&ring);
+    io_uring_prep_connect(sqe, fd,
+        reinterpret_cast<struct sockaddr*>(&addr), sizeof(addr));
+    sqe->user_data = 1;
+    io_uring_submit(&ring);
+
+    if (io_uring_wait_cqe(&ring, &cqe) < 0 || cqe->res < 0) {
+        std::cerr << "[req " << id << "] connect falhou: "
+                  << strerror(cqe ? -cqe->res : errno) << "\n";
+        if (cqe) io_uring_cqe_seen(&ring, cqe);
         goto cleanup;
     }
-
-    if (!epoll_wait_for(epfd, fd, EPOLLOUT)) {
-        std::cerr << "[req " << id << "] timeout no connect\n";
-        goto cleanup;
-    }
-
-    {
-        int err = 0;
-        socklen_t len = sizeof(err);
-        getsockopt(fd, SOL_SOCKET, SO_ERROR, &err, &len);
-        if (err) {
-            std::cerr << "[req " << id << "] connect erro: " << strerror(err) << "\n";
-            goto cleanup;
-        }
-    }
+    io_uring_cqe_seen(&ring, cqe);
     std::cout << "[req " << id << "] Conectado em " << ip << ":" << port << "\n";
 
-    if (!epoll_wait_for(epfd, fd, EPOLLOUT)) {
-        std::cerr << "[req " << id << "] timeout no send\n";
+
+    sqe = io_uring_get_sqe(&ring);
+    io_uring_prep_send(sqe, fd, req_str, strlen(req_str), 0);
+    sqe->user_data = 2;
+    io_uring_submit(&ring);
+
+    if (io_uring_wait_cqe(&ring, &cqe) < 0 || cqe->res < 0) {
+        std::cerr << "[req " << id << "] send falhou\n";
+        if (cqe) io_uring_cqe_seen(&ring, cqe);
         goto cleanup;
     }
-    {
-        ssize_t sent = send(fd, req_str, strlen(req_str), 0);
-        if (sent < 0) {
-            std::cerr << "[req " << id << "] send falhou\n";
-            goto cleanup;
-        }
-        std::cout << "[req " << id << "] Enviou " << sent << " bytes\n";
-    }
+    std::cout << "[req " << id << "] Enviou " << cqe->res << " bytes\n";
+    io_uring_cqe_seen(&ring, cqe);
+
 
     {
         char buf[4096];
         std::string response;
 
         while (true) {
-            if (!epoll_wait_for(epfd, fd, EPOLLIN)) break;
-            ssize_t n = recv(fd, buf, sizeof(buf) - 1, 0);
+            sqe = io_uring_get_sqe(&ring);
+            io_uring_prep_recv(sqe, fd, buf, sizeof(buf) - 1, 0);
+            sqe->user_data = 3;
+            io_uring_submit(&ring);
+
+            if (io_uring_wait_cqe(&ring, &cqe) < 0) break;
+            int n = cqe->res;
+            io_uring_cqe_seen(&ring, cqe);
             if (n <= 0) break;
             buf[n] = '\0';
             response += buf;
@@ -152,7 +150,7 @@ void do_http_get(int id) {
     }
 
 cleanup:
-    close(epfd);
+    io_uring_queue_exit(&ring);
     close(fd);
 }
 

@@ -1,0 +1,656 @@
+9     execve("/usr/local/bin/kernel-io", ["/usr/local/bin/kernel-io"], 0x7fff024758d8 /* 3 vars */) = 0
+9     brk(NULL)                         = 0x55ffe9948000
+9     mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f137f7b5000
+9     access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/glibc-hwcaps/x86-64-v4/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/glibc-hwcaps/x86-64-v4", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/glibc-hwcaps/x86-64-v3/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/glibc-hwcaps/x86-64-v3", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/glibc-hwcaps/x86-64-v2/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/glibc-hwcaps/x86-64-v2", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/tls/x86_64/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/tls/x86_64/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/tls/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/tls/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/tls/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/tls/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/tls/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/tls", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/x86_64/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/x86_64/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/spdlo1ce3c0bdbdce4/p/lib", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/glibc-hwcaps/x86-64-v4/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/glibc-hwcaps/x86-64-v4", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/glibc-hwcaps/x86-64-v3/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/glibc-hwcaps/x86-64-v3", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/glibc-hwcaps/x86-64-v2/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/glibc-hwcaps/x86-64-v2", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/tls/x86_64/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/tls/x86_64/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/tls/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/tls/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/tls/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/tls/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/tls/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/tls", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/x86_64/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/x86_64/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/x86_64/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/x86_64", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib/liburing.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9     newfstatat(AT_FDCWD, "/root/.conan2/p/b/fmt8c006c71284d5/p/lib", 0x7ffd15799610, 0) = -1 ENOENT (No such file or directory)
+9     openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+9     newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4851, ...}, AT_EMPTY_PATH) = 0
+9     mmap(NULL, 4851, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f137f7b3000
+9     close(3)                          = 0
+9     openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liburing.so.2", O_RDONLY|O_CLOEXEC) = 3
+9     read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+9     newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22448, ...}, AT_EMPTY_PATH) = 0
+9     mmap(NULL, 24592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f137f7ac000
+9     mmap(0x7f137f7ae000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f137f7ae000
+9     mmap(0x7f137f7b0000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f137f7b0000
+9     mmap(0x7f137f7b1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f137f7b1000
+9     close(3)                          = 0
+9     openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+9     read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+9     newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2190440, ...}, AT_EMPTY_PATH) = 0
+9     mmap(NULL, 2201728, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f137f592000
+9     mmap(0x7f137f62b000, 1052672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x99000) = 0x7f137f62b000
+9     mmap(0x7f137f72c000, 454656, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7f137f72c000
+9     mmap(0x7f137f79b000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x209000) = 0x7f137f79b000
+9     mmap(0x7f137f7a9000, 10368, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f137f7a9000
+9     close(3)                          = 0
+9     openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+9     read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+9     newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125312, ...}, AT_EMPTY_PATH) = 0
+9     mmap(NULL, 127688, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f137f572000
+9     mmap(0x7f137f575000, 94208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f137f575000
+9     mmap(0x7f137f58c000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f137f58c000
+9     mmap(0x7f137f590000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f137f590000
+9     close(3)                          = 0
+9     openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+9     read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20t\2\0\0\0\0\0"..., 832) = 832
+9     pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+9     newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1926232, ...}, AT_EMPTY_PATH) = 0
+9     pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+9     mmap(NULL, 1974096, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f137f390000
+9     mmap(0x7f137f3b6000, 1400832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f137f3b6000
+9     mmap(0x7f137f50c000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17c000) = 0x7f137f50c000
+9     mmap(0x7f137f55f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1cf000) = 0x7f137f55f000
+9     mmap(0x7f137f565000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f137f565000
+9     close(3)                          = 0
+9     openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+9     read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+9     newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=911904, ...}, AT_EMPTY_PATH) = 0
+9     mmap(NULL, 913680, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f137f2b0000
+9     mmap(0x7f137f2c0000, 475136, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7f137f2c0000
+9     mmap(0x7f137f334000, 368640, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x84000) = 0x7f137f334000
+9     mmap(0x7f137f38e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xdd000) = 0x7f137f38e000
+9     close(3)                          = 0
+9     mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f137f2ae000
+9     mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f137f2ab000
+9     arch_prctl(ARCH_SET_FS, 0x7f137f2ab740) = 0
+9     set_tid_address(0x7f137f2aba10)   = 9
+9     set_robust_list(0x7f137f2aba20, 24) = 0
+9     rseq(0x7f137f2ac060, 0x20, 0, 0x53053053) = 0
+9     mprotect(0x7f137f55f000, 16384, PROT_READ) = 0
+9     mprotect(0x7f137f38e000, 4096, PROT_READ) = 0
+9     mprotect(0x7f137f590000, 4096, PROT_READ) = 0
+9     mprotect(0x7f137f79b000, 45056, PROT_READ) = 0
+9     mprotect(0x7f137f7b1000, 4096, PROT_READ) = 0
+9     mprotect(0x55ffadb3e000, 4096, PROT_READ) = 0
+9     mprotect(0x7f137f7f0000, 8192, PROT_READ) = 0
+9     prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+9     munmap(0x7f137f7b3000, 4851)      = 0
+9     getrandom("\x25\x38\xe2\x11\x15\x7b\x80\x62", 8, GRND_NONBLOCK) = 8
+9     brk(NULL)                         = 0x55ffe9948000
+9     brk(0x55ffe9969000)               = 0x55ffe9969000
+9     futex(0x7f137f7a973c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+9     newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+9     rt_sigaction(SIGRT_1, {sa_handler=0x7f137f416720, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f137f3cc050}, NULL, 8) = 0
+9     rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+9     mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f137eaaa000
+9     mprotect(0x7f137eaab000, 8388608, PROT_READ|PROT_WRITE) = 0
+9     rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9     clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f137f2aa990, parent_tid=0x7f137f2aa990, exit_signal=0, stack=0x7f137eaaa000, stack_size=0x7fff80, tls=0x7f137f2aa6c0} => {parent_tid=[10]}, 88) = 10
+9     rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+10    rseq(0x7f137f2aafe0, 0x20, 0, 0x53053053 <unfinished ...>
+9     <... rt_sigprocmask resumed>NULL, 8) = 0
+9     mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+10    <... rseq resumed>)               = 0
+9     <... mmap resumed>)               = 0x7f137e2a9000
+10    set_robust_list(0x7f137f2aa9a0, 24 <unfinished ...>
+9     mprotect(0x7f137e2aa000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+10    <... set_robust_list resumed>)    = 0
+9     <... mprotect resumed>)           = 0
+10    rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9     rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+10    <... rt_sigprocmask resumed>NULL, 8) = 0
+9     <... rt_sigprocmask resumed>[], 8) = 0
+9     clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f137eaa9990, parent_tid=0x7f137eaa9990, exit_signal=0, stack=0x7f137e2a9000, stack_size=0x7fff80, tls=0x7f137eaa96c0} <unfinished ...>
+10    futex(0x7ffd1579a3d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9     <... clone3 resumed> => {parent_tid=[11]}, 88) = 11
+9     rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+11    rseq(0x7f137eaa9fe0, 0x20, 0, 0x53053053) = 0
+9     mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+11    set_robust_list(0x7f137eaa99a0, 24 <unfinished ...>
+9     <... mmap resumed>)               = 0x7f137daa8000
+11    <... set_robust_list resumed>)    = 0
+9     mprotect(0x7f137daa9000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+11    rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9     <... mprotect resumed>)           = 0
+11    <... rt_sigprocmask resumed>NULL, 8) = 0
+9     rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+11    futex(0x7ffd1579a3d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9     <... rt_sigprocmask resumed>[], 8) = 0
+9     clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f137e2a8990, parent_tid=0x7f137e2a8990, exit_signal=0, stack=0x7f137daa8000, stack_size=0x7fff80, tls=0x7f137e2a86c0} => {parent_tid=[12]}, 88) = 12
+12    rseq(0x7f137e2a8fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9     rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+12    <... rseq resumed>)               = 0
+9     <... rt_sigprocmask resumed>NULL, 8) = 0
+12    set_robust_list(0x7f137e2a89a0, 24 <unfinished ...>
+9     mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+12    <... set_robust_list resumed>)    = 0
+9     <... mmap resumed>)               = 0x7f137d2a7000
+12    rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9     mprotect(0x7f137d2a8000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+12    <... rt_sigprocmask resumed>NULL, 8) = 0
+12    futex(0x7ffd1579a3d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9     <... mprotect resumed>)           = 0
+9     rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9     clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f137daa7990, parent_tid=0x7f137daa7990, exit_signal=0, stack=0x7f137d2a7000, stack_size=0x7fff80, tls=0x7f137daa76c0} => {parent_tid=[13]}, 88) = 13
+13    rseq(0x7f137daa7fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9     rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+13    <... rseq resumed>)               = 0
+9     <... rt_sigprocmask resumed>NULL, 8) = 0
+13    set_robust_list(0x7f137daa79a0, 24) = 0
+9     futex(0x7ffd1579a3d8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+13    rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9     <... futex resumed>)              = 1
+13    <... rt_sigprocmask resumed>NULL, 8) = 0
+10    <... futex resumed>)              = 0
+9     futex(0x7ffd1579a3d8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+10    futex(0x7ffd1579a388, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+9     <... futex resumed>)              = 1
+13    socket(AF_INET, SOCK_STREAM, IPPROTO_IP <unfinished ...>
+11    <... futex resumed>)              = 0
+9     futex(0x7ffd1579a3d8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+10    <... futex resumed>)              = 0
+11    futex(0x7ffd1579a388, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+9     <... futex resumed>)              = 1
+13    <... socket resumed>)             = 3
+12    <... futex resumed>)              = 0
+11    <... futex resumed>)              = 0
+10    socket(AF_INET, SOCK_STREAM, IPPROTO_IP <unfinished ...>
+9     futex(0x7f137f2aa990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 10, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+13    io_uring_setup(32, {flags=0, sq_thread_cpu=0, sq_thread_idle=0 <unfinished ...>
+12    futex(0x7ffd1579a388, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+11    socket(AF_INET, SOCK_STREAM, IPPROTO_IP <unfinished ...>
+10    <... socket resumed>)             = 4
+12    <... futex resumed>)              = 0
+10    io_uring_setup(32, {flags=0, sq_thread_cpu=0, sq_thread_idle=0 <unfinished ...>
+12    socket(AF_INET, SOCK_STREAM, IPPROTO_IP <unfinished ...>
+11    <... socket resumed>)             = 5
+11    io_uring_setup(32, {flags=0, sq_thread_cpu=0, sq_thread_idle=0 <unfinished ...>
+12    <... socket resumed>)             = 6
+12    io_uring_setup(32, {flags=0, sq_thread_cpu=0, sq_thread_idle=0 <unfinished ...>
+13    <... io_uring_setup resumed>, sq_entries=32, cq_entries=64, features=IORING_FEAT_SINGLE_MMAP|IORING_FEAT_NODROP|IORING_FEAT_SUBMIT_STABLE|IORING_FEAT_RW_CUR_POS|IORING_FEAT_CUR_PERSONALITY|IORING_FEAT_FAST_POLL|IORING_FEAT_POLL_32BITS|IORING_FEAT_SQPOLL_NONFIXED|IORING_FEAT_EXT_ARG|IORING_FEAT_NATIVE_WORKERS|IORING_FEAT_RSRC_TAGS|IORING_FEAT_CQE_SKIP|IORING_FEAT_LINKED_FILE|0x3e000, sq_off={head=0, tail=4, ring_mask=16, ring_entries=24, flags=36, dropped=32, array=1088}, cq_off={head=8, tail=12, ring_mask=20, ring_entries=28, overflow=44, cqes=64, flags=40}}) = 7
+11    <... io_uring_setup resumed>, sq_entries=32, cq_entries=64, features=IORING_FEAT_SINGLE_MMAP|IORING_FEAT_NODROP|IORING_FEAT_SUBMIT_STABLE|IORING_FEAT_RW_CUR_POS|IORING_FEAT_CUR_PERSONALITY|IORING_FEAT_FAST_POLL|IORING_FEAT_POLL_32BITS|IORING_FEAT_SQPOLL_NONFIXED|IORING_FEAT_EXT_ARG|IORING_FEAT_NATIVE_WORKERS|IORING_FEAT_RSRC_TAGS|IORING_FEAT_CQE_SKIP|IORING_FEAT_LINKED_FILE|0x3e000, sq_off={head=0, tail=4, ring_mask=16, ring_entries=24, flags=36, dropped=32, array=1088}, cq_off={head=8, tail=12, ring_mask=20, ring_entries=28, overflow=44, cqes=64, flags=40}}) = 9
+10    <... io_uring_setup resumed>, sq_entries=32, cq_entries=64, features=IORING_FEAT_SINGLE_MMAP|IORING_FEAT_NODROP|IORING_FEAT_SUBMIT_STABLE|IORING_FEAT_RW_CUR_POS|IORING_FEAT_CUR_PERSONALITY|IORING_FEAT_FAST_POLL|IORING_FEAT_POLL_32BITS|IORING_FEAT_SQPOLL_NONFIXED|IORING_FEAT_EXT_ARG|IORING_FEAT_NATIVE_WORKERS|IORING_FEAT_RSRC_TAGS|IORING_FEAT_CQE_SKIP|IORING_FEAT_LINKED_FILE|0x3e000, sq_off={head=0, tail=4, ring_mask=16, ring_entries=24, flags=36, dropped=32, array=1088}, cq_off={head=8, tail=12, ring_mask=20, ring_entries=28, overflow=44, cqes=64, flags=40}}) = 8
+13    mmap(NULL, 1216, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 7, 0 <unfinished ...>
+12    <... io_uring_setup resumed>, sq_entries=32, cq_entries=64, features=IORING_FEAT_SINGLE_MMAP|IORING_FEAT_NODROP|IORING_FEAT_SUBMIT_STABLE|IORING_FEAT_RW_CUR_POS|IORING_FEAT_CUR_PERSONALITY|IORING_FEAT_FAST_POLL|IORING_FEAT_POLL_32BITS|IORING_FEAT_SQPOLL_NONFIXED|IORING_FEAT_EXT_ARG|IORING_FEAT_NATIVE_WORKERS|IORING_FEAT_RSRC_TAGS|IORING_FEAT_CQE_SKIP|IORING_FEAT_LINKED_FILE|0x3e000, sq_off={head=0, tail=4, ring_mask=16, ring_entries=24, flags=36, dropped=32, array=1088}, cq_off={head=8, tail=12, ring_mask=20, ring_entries=28, overflow=44, cqes=64, flags=40}}) = 10
+11    mmap(NULL, 1216, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 9, 0 <unfinished ...>
+12    mmap(NULL, 1216, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 10, 0 <unfinished ...>
+10    mmap(NULL, 1216, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 8, 0 <unfinished ...>
+13    <... mmap resumed>)               = 0x7f137f7b4000
+13    mmap(NULL, 2048, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 7, 0x10000000) = 0x7f137d2a4000
+13    io_uring_enter(7, 1, 0, 0, NULL, 8 <unfinished ...>
+12    <... mmap resumed>)               = 0x7f137d2a6000
+11    <... mmap resumed>)               = 0x7f137f7b3000
+10    <... mmap resumed>)               = 0x7f137d2a5000
+12    mmap(NULL, 2048, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 10, 0x10000000 <unfinished ...>
+11    mmap(NULL, 2048, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 9, 0x10000000 <unfinished ...>
+10    mmap(NULL, 2048, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 8, 0x10000000 <unfinished ...>
+12    <... mmap resumed>)               = 0x7f137d2a3000
+11    <... mmap resumed>)               = 0x7f137d2a2000
+12    io_uring_enter(10, 1, 0, 0, NULL, 8 <unfinished ...>
+10    <... mmap resumed>)               = 0x7f137d2a1000
+11    io_uring_enter(9, 1, 0, 0, NULL, 8 <unfinished ...>
+10    io_uring_enter(8, 1, 0, 0, NULL, 8 <unfinished ...>
+12    <... io_uring_enter resumed>)     = 1
+11    <... io_uring_enter resumed>)     = 1
+10    <... io_uring_enter resumed>)     = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+13    <... io_uring_enter resumed>)     = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+10    <... io_uring_enter resumed>)     = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+12    <... io_uring_enter resumed>)     = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8 <unfinished ...>
+13    <... io_uring_enter resumed>)     = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8 <unfinished ...>
+12    <... io_uring_enter resumed>)     = 1
+13    <... io_uring_enter resumed>)     = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8 <unfinished ...>
+12    io_uring_enter(10, 1, 0, 0, NULL, 8 <unfinished ...>
+13    <... io_uring_enter resumed>)     = 1
+12    <... io_uring_enter resumed>)     = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+13    <... io_uring_enter resumed>)     = 0
+13    mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f1375200000
+13    munmap(0x7f1375200000, 48234496)  = 0
+13    munmap(0x7f137c000000, 18874368)  = 0
+13    mprotect(0x7f1378000000, 135168, PROT_READ|PROT_WRITE) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    mprotect(0x7f1378021000, 126976, PROT_READ|PROT_WRITE) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    openat(AT_FDCWD, "/proc/sys/vm/overcommit_memory", O_RDONLY|O_CLOEXEC) = 11
+13    read(11, "0", 1)                  = 1
+13    close(11)                         = 0
+13    madvise(0x7f1378021000, 126976, MADV_DONTNEED) = 0
+13    munmap(0x7f137d2a4000, 2048)      = 0
+13    munmap(0x7f137f7b4000, 1216)      = 0
+13    close(7)                          = 0
+13    close(3)                          = 0
+13    socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+13    io_uring_setup(32, {flags=0, sq_thread_cpu=0, sq_thread_idle=0, sq_entries=32, cq_entries=64, features=IORING_FEAT_SINGLE_MMAP|IORING_FEAT_NODROP|IORING_FEAT_SUBMIT_STABLE|IORING_FEAT_RW_CUR_POS|IORING_FEAT_CUR_PERSONALITY|IORING_FEAT_FAST_POLL|IORING_FEAT_POLL_32BITS|IORING_FEAT_SQPOLL_NONFIXED|IORING_FEAT_EXT_ARG|IORING_FEAT_NATIVE_WORKERS|IORING_FEAT_RSRC_TAGS|IORING_FEAT_CQE_SKIP|IORING_FEAT_LINKED_FILE|0x3e000, sq_off={head=0, tail=4, ring_mask=16, ring_entries=24, flags=36, dropped=32, array=1088}, cq_off={head=8, tail=12, ring_mask=20, ring_entries=28, overflow=44, cqes=64, flags=40}}) = 7
+13    mmap(NULL, 1216, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 7, 0) = 0x7f137f7b4000
+13    mmap(NULL, 2048, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 7, 0x10000000) = 0x7f137d2a4000
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    madvise(0x7f1378021000, 126976, MADV_DONTNEED) = 0
+13    munmap(0x7f137d2a4000, 2048)      = 0
+13    munmap(0x7f137f7b4000, 1216)      = 0
+13    close(7)                          = 0
+13    close(3)                          = 0
+13    socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+13    io_uring_setup(32, {flags=0, sq_thread_cpu=0, sq_thread_idle=0, sq_entries=32, cq_entries=64, features=IORING_FEAT_SINGLE_MMAP|IORING_FEAT_NODROP|IORING_FEAT_SUBMIT_STABLE|IORING_FEAT_RW_CUR_POS|IORING_FEAT_CUR_PERSONALITY|IORING_FEAT_FAST_POLL|IORING_FEAT_POLL_32BITS|IORING_FEAT_SQPOLL_NONFIXED|IORING_FEAT_EXT_ARG|IORING_FEAT_NATIVE_WORKERS|IORING_FEAT_RSRC_TAGS|IORING_FEAT_CQE_SKIP|IORING_FEAT_LINKED_FILE|0x3e000, sq_off={head=0, tail=4, ring_mask=16, ring_entries=24, flags=36, dropped=32, array=1088}, cq_off={head=8, tail=12, ring_mask=20, ring_entries=28, overflow=44, cqes=64, flags=40}}) = 7
+13    mmap(NULL, 1216, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 7, 0) = 0x7f137f7b4000
+13    mmap(NULL, 2048, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 7, 0x10000000) = 0x7f137d2a4000
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+12    <... io_uring_enter resumed>)     = 0
+12    mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f1370000000
+12    munmap(0x7f1374000000, 67108864)  = 0
+12    mprotect(0x7f1370000000, 135168, PROT_READ|PROT_WRITE) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    mprotect(0x7f1370021000, 126976, PROT_READ|PROT_WRITE) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    madvise(0x7f1370021000, 126976, MADV_DONTNEED) = 0
+12    munmap(0x7f137d2a3000, 2048)      = 0
+12    munmap(0x7f137d2a6000, 1216)      = 0
+12    close(10)                         = 0
+12    close(6)                          = 0
+12    socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 6
+12    io_uring_setup(32, {flags=0, sq_thread_cpu=0, sq_thread_idle=0, sq_entries=32, cq_entries=64, features=IORING_FEAT_SINGLE_MMAP|IORING_FEAT_NODROP|IORING_FEAT_SUBMIT_STABLE|IORING_FEAT_RW_CUR_POS|IORING_FEAT_CUR_PERSONALITY|IORING_FEAT_FAST_POLL|IORING_FEAT_POLL_32BITS|IORING_FEAT_SQPOLL_NONFIXED|IORING_FEAT_EXT_ARG|IORING_FEAT_NATIVE_WORKERS|IORING_FEAT_RSRC_TAGS|IORING_FEAT_CQE_SKIP|IORING_FEAT_LINKED_FILE|0x3e000, sq_off={head=0, tail=4, ring_mask=16, ring_entries=24, flags=36, dropped=32, array=1088}, cq_off={head=8, tail=12, ring_mask=20, ring_entries=28, overflow=44, cqes=64, flags=40}}) = 10
+12    mmap(NULL, 1216, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 10, 0) = 0x7f137d2a6000
+12    mmap(NULL, 2048, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 10, 0x10000000) = 0x7f137d2a3000
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+13    <... io_uring_enter resumed>)     = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+10    <... io_uring_enter resumed>)     = 0
+10    mmap(0x7f1374000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f1374000000
+10    mprotect(0x7f1374000000, 135168, PROT_READ|PROT_WRITE) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+13    <... io_uring_enter resumed>)     = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    madvise(0x7f1378021000, 126976, MADV_DONTNEED) = 0
+13    munmap(0x7f137d2a4000, 2048)      = 0
+13    munmap(0x7f137f7b4000, 1216)      = 0
+13    close(7)                          = 0
+13    close(3)                          = 0
+13    socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+13    io_uring_setup(32, {flags=0, sq_thread_cpu=0, sq_thread_idle=0, sq_entries=32, cq_entries=64, features=IORING_FEAT_SINGLE_MMAP|IORING_FEAT_NODROP|IORING_FEAT_SUBMIT_STABLE|IORING_FEAT_RW_CUR_POS|IORING_FEAT_CUR_PERSONALITY|IORING_FEAT_FAST_POLL|IORING_FEAT_POLL_32BITS|IORING_FEAT_SQPOLL_NONFIXED|IORING_FEAT_EXT_ARG|IORING_FEAT_NATIVE_WORKERS|IORING_FEAT_RSRC_TAGS|IORING_FEAT_CQE_SKIP|IORING_FEAT_LINKED_FILE|0x3e000, sq_off={head=0, tail=4, ring_mask=16, ring_entries=24, flags=36, dropped=32, array=1088}, cq_off={head=8, tail=12, ring_mask=20, ring_entries=28, overflow=44, cqes=64, flags=40}}) = 7
+13    mmap(NULL, 1216, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 7, 0) = 0x7f137f7b4000
+13    mmap(NULL, 2048, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_POPULATE, 7, 0x10000000) = 0x7f137d2a4000
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    io_uring_enter(7, 1, 0, 0, NULL, 8) = 1
+13    madvise(0x7f1378021000, 126976, MADV_DONTNEED) = 0
+13    munmap(0x7f137d2a4000, 2048)      = 0
+13    munmap(0x7f137f7b4000, 1216)      = 0
+13    close(7)                          = 0
+13    close(3)                          = 0
+13    rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+13    madvise(0x7f137d2a7000, 8368128, MADV_DONTNEED) = 0
+13    exit(0)                           = ?
+13    +++ exited with 0 +++
+12    <... io_uring_enter resumed>)     = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+10    <... io_uring_enter resumed>)     = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    mprotect(0x7f1374021000, 126976, PROT_READ|PROT_WRITE) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    io_uring_enter(8, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+10    io_uring_enter(8, 1, 0, 0, NULL, 8) = 1
+10    madvise(0x7f1374021000, 126976, MADV_DONTNEED) = 0
+10    munmap(0x7f137d2a1000, 2048)      = 0
+10    munmap(0x7f137d2a5000, 1216)      = 0
+10    close(8)                          = 0
+10    close(4)                          = 0
+10    rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+10    madvise(0x7f137eaaa000, 8368128, MADV_DONTNEED) = 0
+10    exit(0)                           = ?
+9     <... futex resumed>)              = 0
+10    +++ exited with 0 +++
+9     futex(0x7f137eaa9990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 11, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+11    <... io_uring_enter resumed>)     = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8 <unfinished ...>
+12    <... io_uring_enter resumed>)     = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    io_uring_enter(10, 1, 0, 0, NULL, 8) = 1
+12    madvise(0x7f1370021000, 126976, MADV_DONTNEED) = 0
+12    munmap(0x7f137d2a3000, 2048)      = 0
+12    munmap(0x7f137d2a6000, 1216)      = 0
+12    close(10)                         = 0
+12    close(6)                          = 0
+12    rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+12    madvise(0x7f137daa8000, 8368128, MADV_DONTNEED) = 0
+12    exit(0)                           = ?
+12    +++ exited with 0 +++
+11    <... io_uring_enter resumed>)     = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 0, 1, IORING_ENTER_GETEVENTS, NULL, 8) = 0
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    io_uring_enter(9, 1, 0, 0, NULL, 8) = 1
+11    madvise(0x7f1370021000, 126976, MADV_DONTNEED) = 0
+11    munmap(0x7f137d2a2000, 2048)      = 0
+11    munmap(0x7f137f7b3000, 1216)      = 0
+11    close(9)                          = 0
+11    close(5)                          = 0
+11    rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+11    madvise(0x7f137e2a9000, 8368128, MADV_DONTNEED) = 0
+11    exit(0)                           = ?
+9     <... futex resumed>)              = 0
+11    +++ exited with 0 +++
+9     write(1, "Pool de 4 threads, 8 requests\n\n["..., 807) = 807
+9     exit_group(0)                     = ?
+9     +++ exited with 0 +++

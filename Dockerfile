@@ -25,6 +25,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       python3-pip \
       git \
       ca-certificates \
+      liburing-dev \
     && rm -rf /var/lib/apt/lists/* \
     && pip3 install --break-system-packages "conan>=2.0"
 
@@ -48,6 +49,7 @@ COPY tests/ ./tests/
 RUN cmake --preset release \
       -DKIO_BUILD_SIMPLE=$([ "$BACKEND" = "simple" ] && echo ON || echo OFF) \
       -DKIO_BUILD_EPOLL=$([ "$BACKEND"  = "epoll"  ] && echo ON || echo OFF) \
+      -DKIO_BUILD_URING=$([ "$BACKEND"  = "uring"  ] && echo ON || echo OFF) \
       -DKIO_BUILD_KQUEUE=OFF \
       -DKIO_ENABLE_TESTS=OFF \
     && cmake --build build/Release --target kernel-io-${BACKEND}
@@ -58,6 +60,8 @@ ARG BACKEND
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
       libstdc++6 \
+      liburing2 \
+      strace \
     && rm -rf /var/lib/apt/lists/* \
     && useradd --system --no-create-home --shell /usr/sbin/nologin kio
 
