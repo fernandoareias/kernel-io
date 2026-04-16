@@ -1,0 +1,26 @@
+# Build outputs
+build/
+cmake-build-*/
+out/
+
+# CMake artifacts that may leak into the source tree on a misconfigured run
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+
+# Conan generates this when you run `conan install` -- it imports the
+# preset that points at the toolchain inside build/<BuildType>/generators
+CMakeUserPresets.json
+
+# IDE / editor noise
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Local conan cache (only if a user happens to put it inside the repo)
+.conan2/
